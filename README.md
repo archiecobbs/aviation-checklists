@@ -1,5 +1,5 @@
 # General Aviation Checklists
-[![Build Checklists](https://github.com/alexnj/aviation-checklists/actions/workflows/build.yml/badge.svg)](https://github.com/alexnj/aviation-checklists/releases/tag/latest)
+[![Build Checklists](https://github.com/archiecobbs/aviation-checklists/actions/workflows/build.yml/badge.svg)](https://github.com/archiecobbs/aviation-checklists/releases/tag/latest)
 
 This repository is a template for creating and sharing electronic (and paper)
 general aviation checklists and provides automation for compiling it into
@@ -7,7 +7,7 @@ several popular EFIS/EFB compliant formats.
 
 ## Using
 
-<a href="https://github.com/alexnj/aviation-checklists/releases/latest">
+<a href="https://github.com/archiecobbs/aviation-checklists/releases/latest">
 <img align="right" width="500" height="380" alt="image" src="https://github.com/user-attachments/assets/e24d31b3-c8d4-4d5a-891d-b744ab02210e" />
 </a>
 
@@ -21,7 +21,7 @@ Once the your repo is created, navigate to its `Settings` > `Actions` > `General
 All the checklists are in the `checklists/` directory in readable plain text (JSON) form.
 GitHub Actions integrated into this template repository builds each commit into a few EFIS compatible formats using [efis-editor](https://github.com/rdamazio/efis-editor) project, as well as a kneeboard friendly foldable PDF rendering (see screenshot on the right).
 
-Compiled EFIS artifacts can be found on the [Releases](https://github.com/alexnj/aviation-checklists/releases/latest) page.
+Compiled EFIS artifacts can be found on the [Releases](https://github.com/archiecobbs/aviation-checklists/releases/latest) page.
 
 For modifying or authoring new checklists, I highly recommend [EFIS editor](https://rdamazio.github.io/efis-editor/). It can load the JSON checklists and you can export them into any of the supported formats, or as JSON again to commit back to the repo.
 
