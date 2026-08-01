@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "name": "N6703P Checklist",
+    "name": "Jolene Checklist $Revision: 1629 $",
     "makeAndModel": "Beechcraft Sierra",
     "aircraftInfo": "N6703P"
   },
@@ -49,13 +49,8 @@
           "title": "Avionics Setup",
           "items": [
             {
-              "prompt": "All Avionics",
-              "expectation": "OFF",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            },
-            {
-              "prompt": "Circuit Breakers",
-              "expectation": "IN",
+              "prompt": "Avionics Master",
+              "expectation": "VERIFY OFF",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
@@ -64,82 +59,18 @@
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
-              "prompt": "Light Switches",
-              "expectation": "OFF",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            },
-            {
               "prompt": "Battery Switch",
               "expectation": "ON",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
-              "prompt": "Light Switches",
+              "prompt": "Lights",
               "expectation": "VERIFY",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
               "prompt": "Pitot Heat (IFR only)",
               "expectation": "VERIFY",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            },
-            {
-              "prompt": "Flaps",
-              "expectation": "DOWN",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            },
-            {
-              "prompt": "Avionics Master",
-              "expectation": "ON",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            },
-            {
-              "prompt": "JPI EDM-830",
-              "expectation": "SET FUEL QTY",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            },
-            {
-              "prompt": "When unit displays \"FUEL?\" press STEP (white button) if no change. Otherwise, press LEAN FIND (black button). Press STEP to accept displayed amount, or press LEAN FIND until \"FILL±\"displayed. Press STEP to display zero value. Long press LEAN FIND to increase, short press LEAN FIND to decrease. When finished, press STEP.",
-              "type": "ITEM_PLAINTEXT",
-              "indent": 1
-            },
-            {
-              "prompt": "GPS Devices",
-              "type": "ITEM_TITLE"
-            },
-            {
-              "prompt": "Garmin 430W",
-              "expectation": "VERIFY DATABASES",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            },
-            {
-              "prompt": "Garmin GNC 355",
-              "expectation": "VERIFY DATABASES",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            },
-            {
-              "prompt": "Garmin G5 MFD",
-              "expectation": "SELECT & VERIFY GPS #1",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            },
-            {
-              "prompt": "Garmin G5 MFD",
-              "expectation": "SELECT & VERIFY GPS #2",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            },
-            {
-              "prompt": "NAV/COMM Frequencies",
-              "expectation": "ENTERED",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            },
-            {
-              "prompt": "Garmin GNC 355",
-              "expectation": "ENTER FLIGHT PLAN",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            },
-            {
-              "prompt": "Avionics Master",
-              "expectation": "OFF",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
@@ -706,6 +637,16 @@
               "indent": 1
             },
             {
+              "prompt": "JPI EDM-830",
+              "expectation": "SET FUEL QTY",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "When unit displays \"FUEL?\" press STEP (white button) if no change. Otherwise, press LEAN FIND (black button). Press STEP to accept displayed amount, or press LEAN FIND until \"FILL±\"displayed. Press STEP to display zero value. Long press LEAN FIND to increase, short press LEAN FIND to decrease. When finished, press STEP.",
+              "type": "ITEM_PLAINTEXT",
+              "indent": 1
+            },
+            {
               "prompt": "Fuel Quantity Indicators",
               "expectation": "CHECK QUANTITY",
               "type": "ITEM_CHALLENGE_RESPONSE"
@@ -851,11 +792,6 @@
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
-              "prompt": "Avionics Master",
-              "expectation": "ON",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            },
-            {
               "prompt": "CAUTION",
               "type": "ITEM_TITLE"
             },
@@ -863,6 +799,68 @@
               "prompt": "Detuning of the counterweight system of the engine can occur by rapid throttle operation, high RPM and low manifold pressure, or propeller feathering.",
               "type": "ITEM_PLAINTEXT",
               "indent": 1
+            }
+          ],
+          "completionAction": "ACTION_GO_TO_NEXT_CHECKLIST"
+        },
+        {
+          "title": "Avionics Checks",
+          "items": [
+            {
+              "prompt": "Avionics Master",
+              "expectation": "ON",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Garmin 430W",
+              "expectation": "VERIFY DATABASES",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Garmin GNC 355",
+              "expectation": "VERIFY DATABASES",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Garmin G5 MFD",
+              "expectation": "SELECT & VERIFY GPS #1",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Garmin G5 MFD",
+              "expectation": "SELECT & VERIFY GPS #2",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            }
+          ],
+          "completionAction": "ACTION_GO_TO_NEXT_CHECKLIST"
+        },
+        {
+          "title": "Autopilot Checks",
+          "items": [
+            {
+              "prompt": "Autopilot AP Button",
+              "expectation": "PRESS",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Autopilot TO/GO",
+              "expectation": "VERIFY TG, HDG, 7° UP",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Autopilot Disengage Button",
+              "expectation": "VERIFY",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Verify Electric Trim??",
+              "expectation": "TO-DO",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "What Other Autopilot Tests??",
+              "expectation": "TO-DO",
+              "type": "ITEM_CHALLENGE_RESPONSE"
             }
           ],
           "completionAction": "ACTION_GO_TO_NEXT_CHECKLIST"
@@ -909,42 +907,6 @@
               "prompt": "iPhone",
               "expectation": "FLYING FOCUS or AIRPLANE MODE",
               "type": "ITEM_CHALLENGE_RESPONSE"
-            },
-            {
-              "prompt": "JPI EDM 830 Fuel Quantity",
-              "expectation": "CONFIRM",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            },
-            {
-              "prompt": "When unit displays \"FUEL?\" press STEP (white button) if no change. Otherwise, press LEAN FIND (black button). Press STEP to accept displayed amount, or press LEAN FIND until \"FILL±\"displayed. Press STEP to display zero value. Long press LEAN FIND to increase, short press LEAN FIND to decrease. When finished, press STEP.",
-              "type": "ITEM_PLAINTEXT",
-              "indent": 1
-            }
-          ],
-          "completionAction": "ACTION_GO_TO_NEXT_CHECKLIST"
-        },
-        {
-          "title": "Autopilot Tests",
-          "items": [
-            {
-              "prompt": "Autopilot AP Button",
-              "expectation": "PRESS",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            },
-            {
-              "prompt": "Autopilot TO/GO",
-              "expectation": "VERIFY TG, HDG, 7° UP",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            },
-            {
-              "prompt": "Autopilot Disengage Button",
-              "expectation": "VERIFY",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            },
-            {
-              "prompt": "What Other Autopilot Tests??",
-              "expectation": "TO-DO",
-              "type": "ITEM_CHALLENGE_RESPONSE"
             }
           ],
           "completionAction": "ACTION_GO_TO_NEXT_CHECKLIST"
@@ -973,7 +935,12 @@
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
-              "prompt": "GTN 355 Flight Plan",
+              "prompt": "Garmin GNC 355",
+              "expectation": "ENTER FLIGHT PLAN",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "NAV/COMM Frequencies",
               "expectation": "ENTERED",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
