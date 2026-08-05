@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "name": "Jolene Checklist $Revision: 1632 $",
+    "name": "Jolene Checklist $Revision: 1635 $",
     "makeAndModel": "Beechcraft Sierra",
     "aircraftInfo": "N6703P"
   },
@@ -1495,7 +1495,7 @@
             },
             {
               "prompt": "S - Seat Belts",
-              "expectation": "UPRIGHT",
+              "expectation": "FASTENED",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
@@ -1607,25 +1607,40 @@
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
 
+        {
+          "prompt": "Notifications",
+          "type": "ITEM_TITLE"
+        },
             {
-              "prompt": "Flight Log",
-              "type": "ITEM_TITLE"
+              "prompt": "Flight Plan",
+              "expectation": "CLOSED",
+              "type": "ITEM_CHALLENGE_RESPONSE"
             },
-                {
-                  "prompt": "Ending Tach Time",
-                  "expectation": "LOGGED",
-                  "type": "ITEM_CHALLENGE_RESPONSE"
-                },
-                {
-                  "prompt": "Squawks",
-                  "expectation": "NOTED",
-                  "type": "ITEM_CHALLENGE_RESPONSE"
-                },
-                {
-                  "prompt": "Oil Additions",
-                  "expectation": "NOTED",
-                  "type": "ITEM_CHALLENGE_RESPONSE"
-                }
+            {
+              "prompt": "Loved Ones",
+              "expectation": "NOTIFIED",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+
+        {
+          "prompt": "Flight Log",
+          "type": "ITEM_TITLE"
+        },
+            {
+              "prompt": "Ending Tach Time",
+              "expectation": "LOGGED",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Squawks",
+              "expectation": "NOTED",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Oil Additions",
+              "expectation": "NOTED",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            }
 
           ],
           "completionAction": "ACTION_GO_TO_NEXT_CHECKLIST"
@@ -1829,7 +1844,7 @@
       "title": "Engine Failures",
       "checklists": [
         {
-          "title": "Engine Failure on Takeoff Ground Roll",
+          "title": "Engine Failure Before Liftoff",
           "items": [
             {
               "prompt": "Throttle",
@@ -2382,40 +2397,7 @@
           ]
         },
         {
-          "title": "Starter Energized Warning Light Illuminated",
-          "items": [
-            {
-              "prompt": "On the Ground:",
-              "type": "ITEM_PLAINTEXT"
-            },
-            {
-              "prompt": "Battery and Alternator Switches",
-              "expectation": "OFF",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            },
-            {
-              "prompt": "Takeoff",
-              "expectation": "DO NOT ATTEMPT",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            },
-            {
-              "prompt": "In Flight After Air Start:",
-              "type": "ITEM_PLAINTEXT"
-            },
-            {
-              "prompt": "Battery and Alternator Switches",
-              "expectation": "OFF",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            },
-            {
-              "prompt": "Land",
-              "expectation": "LAND AS SOON AS PRACTICAL",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            }
-          ]
-        },
-        {
-          "title": "Alternator Warning Light Illuminated",
+          "title": "Alternator Warning Light",
           "items": [
             {
               "prompt": "Ammeter",
@@ -2474,13 +2456,13 @@
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
-              "prompt": "Stabilator Trim Thumb Switch (on Control Wheel)",
-              "expectation": "DEPRESS AND MOVE IN DIRECTION OPPOSITE TO UNSCHEDULED PITCH TRIM",
+              "prompt": "Stabilator Trim Thumb Switch",
+              "expectation": "MOVE IN OPPOSITE DIRECTION",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
-              "prompt": "Stabilator Trim ON-OFF Switch",
-              "expectation": "OFF",
+              "prompt": "Electric Trim Circuit Breaker",
+              "expectation": "PULL OFF",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
@@ -2540,7 +2522,7 @@
             },
             {
               "prompt": "Throttle",
-              "expectation": "≤ 12\" MANIFOLD PRESSURE",
+              "expectation": "12\" MANIFOLD PRESSURE",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
@@ -2573,7 +2555,7 @@
               "indent": 1
             },
             {
-              "prompt": "LDG GEAR MOTOR Circuit Breaker",
+              "prompt": "GEAR MOTOR Circuit Breaker",
               "expectation": "PUSH IN",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
