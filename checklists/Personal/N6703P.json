@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "name": "Jolene Checklist $Revision: 1635 $",
+    "name": "Jolene Checklist $Revision: 1637 $",
     "makeAndModel": "Beechcraft Sierra",
     "aircraftInfo": "N6703P"
   },
@@ -11,11 +11,6 @@
         {
           "title": "Aircraft",
           "items": [
-            {
-              "prompt": "Parking Brake",
-              "expectation": "SET",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            },
             {
               "prompt": "Control Lock",
               "expectation": "REMOVE",
@@ -566,11 +561,6 @@
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
-              "prompt": "Parking Brake",
-              "expectation": "SET",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            },
-            {
               "prompt": "Passengers",
               "expectation": "BRIEFED",
               "type": "ITEM_CHALLENGE_RESPONSE"
@@ -980,11 +970,6 @@
           "type": "ITEM_TITLE"
         },
             {
-              "prompt": "Parking Brake",
-              "expectation": "SET",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            },
-            {
               "prompt": "Oil Pressure & Temp",
               "expectation": "CHECK",
               "type": "ITEM_CHALLENGE_RESPONSE"
@@ -1004,6 +989,16 @@
           "prompt": "RUN-UP",
           "type": "ITEM_TITLE"
         },
+            {
+              "prompt": "Brakes",
+              "expectation": "APPLIED",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Mixture",
+              "expectation": "FULL RICH",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
             {
               "prompt": "Throttle",
               "expectation": "2000 RPM",
@@ -1034,6 +1029,11 @@
           "prompt": "TAKEOFF CONFIGURATION FLOW",
           "type": "ITEM_TITLE"
         },
+            {
+              "prompt": "Flight Controls",
+              "expectation": "FREE AND CORRECT",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
             {
               "prompt": "Stabilator Trim",
               "expectation": "TAKE-OFF RANGE",
@@ -1077,11 +1077,6 @@
             {
               "prompt": "Fuel Boost Pump",
               "expectation": "OFF",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            },
-            {
-              "prompt": "Flight Controls",
-              "expectation": "FREE AND CORRECT",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
@@ -1138,11 +1133,6 @@
               "prompt": "Doors and Windows",
               "expectation": "SECURE",
               "type": "ITEM_CHALLENGE_RESPONSE"
-            },
-            {
-              "prompt": "Parking Brake",
-              "expectation": "RELEASE",
-              "type": "ITEM_CHALLENGE_RESPONSE"
             }
           ],
           "completionAction": "ACTION_GO_TO_NEXT_CHECKLIST"
@@ -1162,8 +1152,13 @@
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
-              "prompt": "Brakes",
-              "expectation": "RELEASE",
+              "prompt": "Oil Pressure & Temp",
+              "expectation": "CHECK",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Airspeed",
+              "expectation": "ALIVE",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
@@ -1272,6 +1267,7 @@
               "type": "ITEM_PLAINTEXT",
               "indent": 1
             }
+
           ],
           "completionAction": "ACTION_GO_TO_NEXT_CHECKLIST"
         },
@@ -1360,6 +1356,36 @@
             },
 
         {
+          "prompt": "Passing Fix - HAREM",
+          "type": "ITEM_TITLE"
+        },
+            {
+              "prompt": "H - Heading",
+              "expectation": "CHECK",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "A - Altitude",
+              "expectation": "CHECK",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "R - Radio/Report",
+              "expectation": "CHECK",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "E - Enroute Next Leg",
+              "expectation": "CHECK",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "M - Minimums",
+              "expectation": "CHECK",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+
+        {
           "prompt": "ESTABLISHED ON FINAL",
           "type": "ITEM_TITLE"
         },
@@ -1404,12 +1430,12 @@
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
-              "prompt": "DA/MAP",
+              "prompt": "Minimums",
               "expectation": "RECONFIRM",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
-              "prompt": "TIMER",
+              "prompt": "Timer",
               "expectation": "START (IF NEEDED)",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
@@ -1439,6 +1465,11 @@
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
+              "prompt": "Flaps",
+              "expectation": "RETRACT SLOWLY",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
               "prompt": "TO/GA Button",
               "expectation": "PRESSED",
               "type": "ITEM_CHALLENGE_RESPONSE"
@@ -1451,11 +1482,6 @@
             {
               "prompt": "Autopilot",
               "expectation": "CONFIRM SEQUENCE",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            },
-            {
-              "prompt": "Flaps",
-              "expectation": "RETRACT SLOWLY",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
@@ -1558,7 +1584,7 @@
         },
             {
               "prompt": "Throttle",
-              "expectation": "CLOSED",
+              "expectation": "IDLE",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
@@ -1583,12 +1609,12 @@
             },
             {
               "prompt": "Throttle",
-              "expectation": "CLOSED",
+              "expectation": "IDLE",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
               "prompt": "Magnetos",
-              "expectation": "OFF AFTER ENGINE STOPS",
+              "expectation": "OFF",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
 
@@ -1597,7 +1623,7 @@
           "type": "ITEM_TITLE"
         },
             {
-              "prompt": "Battery and Alternator Switches",
+              "prompt": "Battery and Alternator",
               "expectation": "OFF",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
