@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "name": "Jolene Checklist $Revision: 1637 $",
+    "name": "Jolene Checklist $Revision: 1638 $",
     "makeAndModel": "Beechcraft Sierra",
     "aircraftInfo": "N6703P"
   },
@@ -632,7 +632,7 @@
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
-              "prompt": "If external power is used, leave Alternator Switch OFF",
+              "prompt": "With external power, leave Alternator OFF",
               "type": "ITEM_PLAINTEXT",
               "indent": 1
             },
@@ -642,7 +642,7 @@
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
-              "prompt": "When unit displays \"FUEL?\" press STEP (white button) if no change. Otherwise, press LEAN FIND (black button). Press STEP to accept displayed amount, or press LEAN FIND until \"FILL±\"displayed. Press STEP to display zero value. Long press LEAN FIND to increase, short press LEAN FIND to decrease. When finished, press STEP.",
+              "prompt": "STEP = Accept; LF = Adjust",
               "type": "ITEM_PLAINTEXT",
               "indent": 1
             },
@@ -834,31 +834,46 @@
           "completionAction": "ACTION_GO_TO_NEXT_CHECKLIST"
         },
         {
-          "title": "Autopilot Checks",
+          "title": "Trim & Autopilot Checks",
           "items": [
             {
-              "prompt": "Autopilot AP Button",
+              "prompt": "Electric Trim",
+              "expectation": "VERIFY",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Autopilot AP, HDG Buttons",
               "expectation": "PRESS",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
-              "prompt": "Autopilot TO/GO",
+              "prompt": "G5 Scoreboard",
+              "expectation": "VERIFY HDG, AP, PIT",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Heading Bug",
+              "expectation": "TURN, VERIFY RESPONSE",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Servos",
+              "expectation": "VERIFY OVERRIDE",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "TO/GO Button",
+              "expectation": "PRESS",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "G5 Scoreboard",
               "expectation": "VERIFY TG, HDG, 7° UP",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
               "prompt": "Autopilot Disengage Button",
-              "expectation": "VERIFY",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            },
-            {
-              "prompt": "Verify Electric Trim??",
-              "expectation": "TO-DO",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            },
-            {
-              "prompt": "What Other Autopilot Tests??",
-              "expectation": "TO-DO",
+              "expectation": "VERIFY (W/ AUDIO)",
               "type": "ITEM_CHALLENGE_RESPONSE"
             }
           ],
@@ -1005,7 +1020,7 @@
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
-              "prompt": "At high density altitude, lean for max power.",
+              "prompt": "High density altitude, lean for max power",
               "type": "ITEM_PLAINTEXT",
               "indent": 1
             },
@@ -1040,7 +1055,7 @@
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
-              "prompt": "6º nose up if only front seats are occupied",
+              "prompt": "6º nose up if only front seats occupied",
               "type": "ITEM_PLAINTEXT",
               "indent": 1
             },
@@ -1065,7 +1080,7 @@
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
-              "prompt": "At high density altitude, leave at previous setting.",
+              "prompt": "High density altitude, keep previous setting",
               "type": "ITEM_PLAINTEXT",
               "indent": 1
             },
@@ -1285,7 +1300,7 @@
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
-              "prompt": "Altimeters",
+              "prompt": "Altimeter & G5",
               "expectation": "PRESSURE SET",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
@@ -1390,7 +1405,7 @@
           "type": "ITEM_TITLE"
         },
             {
-              "prompt": "AutoPilot",
+              "prompt": "Autopilot",
               "expectation": "VERIFY APR/GS MODE",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
@@ -1681,18 +1696,18 @@
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
-              "prompt": "Sun Shades",
+              "prompt": "Sun Shade",
               "expectation": "INSTALLED",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            },
-            {
-              "prompt": "Wheel Chocks",
-              "expectation": "INSTALL",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
               "prompt": "Tie-Downs",
               "expectation": "SECURE",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Wheel Chocks",
+              "expectation": "INSTALL",
               "type": "ITEM_CHALLENGE_RESPONSE"
             }
 
@@ -1731,11 +1746,6 @@
             {
               "prompt": "Aircraft",
               "expectation": "HANGARED",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            },
-            {
-              "prompt": "Battery Trickle Charger",
-              "expectation": "CONNECTED",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
 
@@ -1785,17 +1795,32 @@
             },
 
         {
+          "prompt": "Storage Prep",
+          "type": "ITEM_TITLE"
+        },
+            {
+              "prompt": "Battery Trickle Charger",
+              "expectation": "CONNECTED",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "All Doors",
+              "expectation": "CLOSED",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+
+        {
           "prompt": "Surface Cleaning",
           "type": "ITEM_TITLE"
         },
             {
               "prompt": "Leading Edges",
-              "expectation": "WIPED CLEAN",
+              "expectation": "WIPE CLEAN",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
               "prompt": "Windshield",
-              "expectation": "WIPED CLEAN",
+              "expectation": "WIPE CLEAN",
               "type": "ITEM_CHALLENGE_RESPONSE"
             }
 
