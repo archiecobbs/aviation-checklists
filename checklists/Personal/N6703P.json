@@ -1,156 +1,120 @@
 {
   "metadata": {
-    "name": "Jolene Checklist $Revision: 1638 $",
+    "name": "Jolene Checklist $Revision: 1640 $",
     "makeAndModel": "Beechcraft Sierra",
     "aircraftInfo": "N6703P"
   },
   "groups": [
+
     {
-      "title": "Cabin Prep",
+      "title": "Before Flight",
       "checklists": [
         {
-          "title": "Aircraft",
+          "title": "Device Preparation",
           "items": [
-            {
-              "prompt": "Control Lock",
-              "expectation": "REMOVE",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            },
-            {
-              "prompt": "All Switches",
-              "expectation": "OFF",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            },
-            {
-              "prompt": "Landing Gear Handle",
-              "expectation": "VERIFY DOWN",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            },
 
-            {
-              "prompt": "Flight Log - Tach Time",
-              "expectation": "VERIFIED",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            },
-            {
-              "prompt": "Flight Log - Squawks",
-              "expectation": "NOTED",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            }
-          ],
-          "completionAction": "ACTION_GO_TO_NEXT_CHECKLIST"
-        },
         {
-          "title": "Avionics Setup",
-          "items": [
-            {
-              "prompt": "Avionics Master",
-              "expectation": "VERIFY OFF",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            },
-            {
-              "prompt": "Landing Gear Switch Handle",
-              "expectation": "VERIFY DOWN",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            },
-            {
-              "prompt": "Battery Switch",
-              "expectation": "ON",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            },
-            {
-              "prompt": "Lights",
-              "expectation": "VERIFY",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            },
-            {
-              "prompt": "Pitot Heat (IFR only)",
-              "expectation": "VERIFY",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            },
-            {
-              "prompt": "Battery Switch",
-              "expectation": "OFF",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            }
-          ],
-          "completionAction": "ACTION_GO_TO_NEXT_CHECKLIST"
+          "prompt": "Charging Batteries",
+          "type": "ITEM_TITLE"
         },
-        {
-          "title": "ForeFlight Setup",
-          "items": [
             {
               "prompt": "iPad",
-              "expectation": "MOUNTED",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            },
-            {
-              "prompt": "iPad Power Cord",
-              "expectation": "CONNECTED",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            },
-            {
-              "prompt": "ForeFlight App",
-              "expectation": "STARTED",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            },
-            {
-              "prompt": "ForeFlight Downloads",
-              "expectation": "UP TO DATE",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            },
-            {
-              "prompt": "Other Apps",
-              "expectation": "TERMINATED",
+              "expectation": "CHARGED",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
               "prompt": "ForeFlight Sentry",
-              "expectation": "MOUNTED",
+              "expectation": "CHARGED",
               "type": "ITEM_CHALLENGE_RESPONSE"
-            }
-          ],
-          "completionAction": "ACTION_GO_TO_NEXT_CHECKLIST"
-        },
-        {
-          "title": "Personal Gear Setup",
-          "items": [
+            },
             {
-              "prompt": "Headsets",
-              "expectation": "PLUGGED IN",
+              "prompt": "Garmin inReach",
+              "expectation": "CHARGED",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+
+        {
+          "prompt": "Data & Planning",
+          "type": "ITEM_TITLE"
+        },
+            {
+              "prompt": "Garmin Updates",
+              "expectation": "DOWNLOADED",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "ForeFlight Downloads",
+              "expectation": "UP-TO-DATE",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "ForeFlight Flights",
+              "expectation": "BRIEFED",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+
+        {
+          "prompt": "Flight Bag Check",
+          "type": "ITEM_TITLE"
+        },
+            {
+              "prompt": "Silver Bag (Radio)",
+              "expectation": "PACKED",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Orange Bag (Batteries)",
+              "expectation": "PACKED",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Blue Bag (Power Cords)",
+              "expectation": "PACKED",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "iPad Pivot Mount",
+              "expectation": "PACKED",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "ForeFlight Sentry",
+              "expectation": "PACKED",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Airplane/Hangar Keys",
+              "expectation": "PACKED",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "iPad",
+              "expectation": "PACKED",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
               "prompt": "Kneeboard",
-              "expectation": "READY ON DASH",
+              "expectation": "PACKED",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
-              "prompt": "Flight Bag",
-              "expectation": "ACCESSIBLE",
+              "prompt": "Checklists",
+              "expectation": "PACKED",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
-              "prompt": "Hat & Sunglasses",
-              "expectation": "ACCESSIBLE",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            },
-            {
-              "prompt": "Snacks & Hydration",
-              "expectation": "ACCESSIBLE",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            },
-            {
-              "prompt": "BioLiquid Containers",
-              "expectation": "ACCESSIBLE",
+              "prompt": "Foggles (if needed)",
+              "expectation": "PACKED",
               "type": "ITEM_CHALLENGE_RESPONSE"
             }
+
           ],
           "completionAction": "ACTION_GO_TO_NEXT_CHECKLIST"
         }
       ],
       "category": "normal"
     },
+
     {
       "title": "Preflight",
       "checklists": [
@@ -158,7 +122,7 @@
           "title": "Preflight Inspection",
           "items": [
         {
-          "prompt": "Preparation",
+          "prompt": "Preparation - Exterior",
           "type": "ITEM_TITLE"
         },
             {
@@ -174,6 +138,70 @@
             {
               "prompt": "Pitot Tube Cover",
               "expectation": "REMOVE & STOW",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Tie Downs and Chocks",
+              "expectation": "REMOVE",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+        {
+          "prompt": "Preparation - Cabin",
+          "type": "ITEM_TITLE"
+        },
+            {
+              "prompt": "Flight Log - Tach Time",
+              "expectation": "VERIFY",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Flight Log - Squawks",
+              "expectation": "NOTE",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Control Lock",
+              "expectation": "REMOVE",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Fuel Selector Valve",
+              "expectation": "CHECK, THEN LEFT",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "All Switches",
+              "expectation": "VERIFY OFF",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Landing Gear Handle",
+              "expectation": "VERIFY DOWN",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Battery Switch",
+              "expectation": "ON",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Nav & Strobe Lights",
+              "expectation": "VERIFY",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Pitot Heat (IFR only)",
+              "expectation": "VERIFY",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Battery Switch",
+              "expectation": "OFF",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Garmin Updates",
+              "expectation": "APPLY",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
 
@@ -242,17 +270,12 @@
           "type": "ITEM_TITLE"
         },
             {
-              "prompt": "Tie Down and Chocks",
-              "expectation": "REMOVE",
+              "prompt": "Fuel Sump",
+              "expectation": "DRAIN",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
               "prompt": "Fuel Tank Vent Line",
-              "expectation": "CHECK",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            },
-            {
-              "prompt": "Tire, Wheel and Brake",
               "expectation": "CHECK",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
@@ -262,8 +285,8 @@
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
-              "prompt": "Fuel Sump",
-              "expectation": "DRAIN",
+              "prompt": "Tire, Wheel and Brake",
+              "expectation": "CHECK",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
@@ -326,19 +349,14 @@
               "expectation": "CHECK",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
-            {
-              "prompt": "Antennas",
-              "expectation": "CHECK",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            },
 
         {
           "prompt": "Empennage",
           "type": "ITEM_TITLE"
         },
             {
-              "prompt": "Tie Down",
-              "expectation": "REMOVE",
+              "prompt": "Antennas",
+              "expectation": "CHECK",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
@@ -348,11 +366,6 @@
             },
             {
               "prompt": "Vortex Generators",
-              "expectation": "CHECK",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            },
-            {
-              "prompt": "Beacon Light",
               "expectation": "CHECK",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
@@ -437,12 +450,12 @@
           "type": "ITEM_TITLE"
         },
             {
-              "prompt": "Tie Down and Chocks",
-              "expectation": "REMOVE",
+              "prompt": "Fuel Sump",
+              "expectation": "DRAIN",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
-              "prompt": "Tire, Wheel and Brake",
+              "prompt": "Fuel Tank Vent Line",
               "expectation": "CHECK",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
@@ -452,13 +465,8 @@
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
-              "prompt": "Fuel Tank Vent Line",
+              "prompt": "Tire, Wheel and Brake",
               "expectation": "CHECK",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            },
-            {
-              "prompt": "Fuel Sump",
-              "expectation": "DRAIN",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
 
@@ -497,11 +505,6 @@
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
-              "prompt": "Nose Wheel Chocks",
-              "expectation": "REMOVE",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            },
-            {
               "prompt": "Tire and Nose Gear",
               "expectation": "CHECK",
               "type": "ITEM_CHALLENGE_RESPONSE"
@@ -532,16 +535,103 @@
               "type": "ITEM_CHALLENGE_RESPONSE"
             }
 
-
           ],
           "completionAction": "ACTION_GO_TO_NEXT_CHECKLIST"
         }
       ],
       "category": "normal"
     },
+
     {
+      "title": "Cabin Prep",
+      "checklists": [
+        {
+          "title": "Personal Gear Setup",
+          "items": [
+            {
+              "prompt": "Headsets",
+              "expectation": "PLUGGED IN",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Kneeboard",
+              "expectation": "READY ON DASH",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Flight Bag",
+              "expectation": "ACCESSIBLE",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Hat & Sunglasses",
+              "expectation": "ACCESSIBLE",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Snacks & Hydration",
+              "expectation": "ACCESSIBLE",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "BioLiquid Containers",
+              "expectation": "ACCESSIBLE",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Any Oil Added",
+              "expectation": "LOGGED",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            }
+          ],
+          "completionAction": "ACTION_GO_TO_NEXT_CHECKLIST"
+        },
+        {
+          "title": "ForeFlight Setup",
+          "items": [
+            {
+              "prompt": "iPad",
+              "expectation": "MOUNTED",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "iPad Power Cord",
+              "expectation": "CONNECTED",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "ForeFlight App",
+              "expectation": "STARTED",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "ForeFlight Downloads",
+              "expectation": "UP TO DATE",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Other Apps",
+              "expectation": "TERMINATED",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "ForeFlight Sentry",
+              "expectation": "MOUNTED",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            }
+          ],
+          "completionAction": "ACTION_GO_TO_NEXT_CHECKLIST"
+        }
+      ],
+      "category": "normal"
+    },
+
+    {
+
       "title": "Startup",
       "checklists": [
+
+
         {
           "title": "Before Starting",
           "items": [
@@ -576,11 +666,6 @@
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
-              "prompt": "Fuel Selector Valve",
-              "expectation": "CHECK, THEN LEFT",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            },
-            {
               "prompt": "6º nose up if only front seats are occupied",
               "type": "ITEM_PLAINTEXT",
               "indent": 1
@@ -591,18 +676,8 @@
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
-              "prompt": "Flaps",
-              "expectation": "UP",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            },
-            {
               "prompt": "Landing Gear Handle",
               "expectation": "VERIFY DOWN",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            },
-            {
-              "prompt": "Avionics Master",
-              "expectation": "VERIFY OFF",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
@@ -617,17 +692,17 @@
           "title": "Starting Engine",
           "items": [
             {
+              "prompt": "Avionics Master",
+              "expectation": "VERIFY OFF",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
               "prompt": "Propeller",
               "expectation": "HIGH RPM",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
-              "prompt": "Battery Switch",
-              "expectation": "ON",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            },
-            {
-              "prompt": "Alternator Switch",
+              "prompt": "Battery and Alternator",
               "expectation": "ON",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
@@ -652,7 +727,7 @@
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
-              "prompt": "Do not takeoff if gauges indicate in yellow arc or with less than 13 gallons in each tank.",
+              "prompt": "Do not takeoff if gauges in yellow arc or with less than 13 gallons in each tank.",
               "type": "ITEM_PLAINTEXT",
               "indent": 1
             },
@@ -677,7 +752,7 @@
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
-              "prompt": "At most two or three seconds. Turn boost pump OFF as soon as fuel flow needle moves.",
+              "prompt": "At most 3 seconds. Turn OFF as soon as fuel flow needle moves.",
               "type": "ITEM_PLAINTEXT",
               "indent": 1
             },
@@ -772,14 +847,9 @@
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
-              "prompt": "External Power (If Used)",
-              "expectation": "DISCONNECT",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            },
-            {
-              "prompt": "Alternator Switch",
-              "expectation": "ON",
-              "type": "ITEM_CHALLENGE_RESPONSE"
+              "prompt": "If used, disconnect external power and turn Alternator ON",
+              "type": "ITEM_PLAINTEXT",
+              "indent": 1
             },
             {
               "prompt": "Oil Pressure",
@@ -803,11 +873,21 @@
           "completionAction": "ACTION_GO_TO_NEXT_CHECKLIST"
         },
         {
-          "title": "Avionics Checks",
+          "title": "Avionics & Devices",
           "items": [
             {
               "prompt": "Avionics Master",
               "expectation": "ON",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Headset ANR",
+              "expectation": "ON",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Headset Communication",
+              "expectation": "VERIFY",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
@@ -822,74 +902,12 @@
             },
             {
               "prompt": "Garmin G5 MFD",
-              "expectation": "SELECT & VERIFY GPS #1",
+              "expectation": "VERIFY GPS #1",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
               "prompt": "Garmin G5 MFD",
-              "expectation": "SELECT & VERIFY GPS #2",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            }
-          ],
-          "completionAction": "ACTION_GO_TO_NEXT_CHECKLIST"
-        },
-        {
-          "title": "Trim & Autopilot Checks",
-          "items": [
-            {
-              "prompt": "Electric Trim",
-              "expectation": "VERIFY",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            },
-            {
-              "prompt": "Autopilot AP, HDG Buttons",
-              "expectation": "PRESS",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            },
-            {
-              "prompt": "G5 Scoreboard",
-              "expectation": "VERIFY HDG, AP, PIT",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            },
-            {
-              "prompt": "Heading Bug",
-              "expectation": "TURN, VERIFY RESPONSE",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            },
-            {
-              "prompt": "Servos",
-              "expectation": "VERIFY OVERRIDE",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            },
-            {
-              "prompt": "TO/GO Button",
-              "expectation": "PRESS",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            },
-            {
-              "prompt": "G5 Scoreboard",
-              "expectation": "VERIFY TG, HDG, 7° UP",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            },
-            {
-              "prompt": "Autopilot Disengage Button",
-              "expectation": "VERIFY (W/ AUDIO)",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            }
-          ],
-          "completionAction": "ACTION_GO_TO_NEXT_CHECKLIST"
-        },
-        {
-          "title": "Personal Devices",
-          "items": [
-            {
-              "prompt": "Headset ANR",
-              "expectation": "ON",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            },
-            {
-              "prompt": "Headset Communication",
-              "expectation": "VERIFY",
+              "expectation": "VERIFY GPS #2",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
@@ -926,31 +944,72 @@
           "completionAction": "ACTION_GO_TO_NEXT_CHECKLIST"
         },
         {
+          "title": "Trim & Autopilot Checks",
+          "items": [
+            {
+              "prompt": "Electric Trim",
+              "expectation": "VERIFY",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Autopilot",
+              "expectation": "ENABLE",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "G5 Scoreboard",
+              "expectation": "VERIFY ROL, AP, PIT",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Servos",
+              "expectation": "VERIFY OVERRIDE",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "TO/GO Button",
+              "expectation": "PRESS",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "G5 Scoreboard",
+              "expectation": "VERIFY TG",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Autopilot Disengage Button",
+              "expectation": "VERIFY W/ AUDIO",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            }
+          ],
+          "completionAction": "ACTION_GO_TO_NEXT_CHECKLIST"
+        },
+        {
           "title": "Avionics & Clearance",
           "items": [
             {
               "prompt": "ATIS/ASOS",
-              "expectation": "RECORDED",
+              "expectation": "RECORD",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
               "prompt": "Round Altimeter",
-              "expectation": "SET & CHECKED",
+              "expectation": "SET",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
               "prompt": "G5 PFD Altimeter",
-              "expectation": "SET & CHECKED",
+              "expectation": "SET CHECKED",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
               "prompt": "Clearance",
-              "expectation": "ACQUIRED",
+              "expectation": "ACQUIRE",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
               "prompt": "Garmin GNC 355",
-              "expectation": "ENTER FLIGHT PLAN",
+              "expectation": "SYNC FLIGHT PLAN",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
@@ -965,12 +1024,7 @@
             },
             {
               "prompt": "Transponder",
-              "expectation": "CODE SET, ALT",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            },
-            {
-              "prompt": "Radios",
-              "expectation": "FREQUENCIES LOADED",
+              "expectation": "SET, ALT",
               "type": "ITEM_CHALLENGE_RESPONSE"
             }
           ],
@@ -985,7 +1039,12 @@
           "type": "ITEM_TITLE"
         },
             {
-              "prompt": "Oil Pressure & Temp",
+              "prompt": "Oil Pressure",
+              "expectation": "CHECK",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Oil Temperature",
               "expectation": "CHECK",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
@@ -1035,13 +1094,23 @@
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
+              "prompt": "Oil Pressure & Temp",
+              "expectation": "CHECK",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Ammeter",
+              "expectation": "CHECK",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
               "prompt": "Throttle",
               "expectation": "IDLE",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
 
         {
-          "prompt": "TAKEOFF CONFIGURATION FLOW",
+          "prompt": "CONFIGURATION CHECKS",
           "type": "ITEM_TITLE"
         },
             {
@@ -1076,13 +1145,8 @@
             },
             {
               "prompt": "Mixture",
-              "expectation": "FULL RICH",
+              "expectation": "SET FOR TAKEOFF",
               "type": "ITEM_CHALLENGE_RESPONSE"
-            },
-            {
-              "prompt": "High density altitude, keep previous setting",
-              "type": "ITEM_PLAINTEXT",
-              "indent": 1
             },
             {
               "prompt": "Propeller",
@@ -1094,6 +1158,11 @@
               "expectation": "OFF",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
+
+        {
+          "prompt": "AVIONICS CHECKS",
+          "type": "ITEM_TITLE"
+        },
             {
               "prompt": "Heading Bug",
               "expectation": "VERIFY",
@@ -1102,6 +1171,11 @@
             {
               "prompt": "Altitude Bug",
               "expectation": "VERIFY",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Tower & Departure Freqs.",
+              "expectation": "LOADED",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
@@ -1119,21 +1193,11 @@
               "expectation": "TO/GO",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
-            {
-              "prompt": "Departure Time",
-              "expectation": "NOTED",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            },
-            {
-              "prompt": "Oil Pressure & Temp",
-              "expectation": "CHECK",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            },
-            {
-              "prompt": "Ammeter",
-              "expectation": "CHECK",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            },
+
+        {
+          "prompt": "FINAL CHECKS",
+          "type": "ITEM_TITLE"
+        },
             {
               "prompt": "Seat Belts",
               "expectation": "CHECK",
@@ -1148,6 +1212,11 @@
               "prompt": "Doors and Windows",
               "expectation": "SECURE",
               "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Departure Time",
+              "expectation": "NOTED",
+              "type": "ITEM_CHALLENGE_RESPONSE"
             }
           ],
           "completionAction": "ACTION_GO_TO_NEXT_CHECKLIST"
@@ -1155,6 +1224,7 @@
       ],
       "category": "normal"
     },
+
     {
       "title": "In Flight",
       "checklists": [
@@ -1187,8 +1257,8 @@
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
-              "prompt": "Airspeed",
-              "expectation": "85 KNOTS",
+              "prompt": "Angle of Attack",
+              "expectation": "BLUE CIRCLE",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
@@ -1278,7 +1348,7 @@
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
-              "prompt": "Backup to desired rich of peak temp. Press Lean Find to show relative difference.",
+              "prompt": "Backup to desired rich of peak temp. Press LF to show relative difference.",
               "type": "ITEM_PLAINTEXT",
               "indent": 1
             }
@@ -1560,6 +1630,7 @@
       ],
       "category": "normal"
     },
+
     {
       "title": "Postflight",
       "checklists": [
@@ -1587,16 +1658,16 @@
         {
           "title": "Shutdown",
           "items": [
-            {
-              "prompt": "Avionics Master",
-              "expectation": "OFF",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            },
 
         {
           "prompt": "SCENARIO 1: NORMAL",
           "type": "ITEM_TITLE"
         },
+            {
+              "prompt": "Avionics Master",
+              "expectation": "OFF",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
             {
               "prompt": "Throttle",
               "expectation": "IDLE",
@@ -1617,6 +1688,11 @@
           "prompt": "SCENARIO 2: HOT STOP",
           "type": "ITEM_TITLE"
         },
+            {
+              "prompt": "Avionics Master",
+              "expectation": "OFF",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
             {
               "prompt": "Mixture",
               "expectation": "FULL RICH",
@@ -1647,19 +1723,14 @@
               "expectation": "OFF",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
-
-        {
-          "prompt": "Notifications",
-          "type": "ITEM_TITLE"
-        },
             {
-              "prompt": "Flight Plan",
-              "expectation": "CLOSED",
+              "prompt": "Headset ANR",
+              "expectation": "OFF",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
-              "prompt": "Loved Ones",
-              "expectation": "NOTIFIED",
+              "prompt": "ForeFlight Sentry",
+              "expectation": "OFF",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
 
@@ -1677,19 +1748,41 @@
               "expectation": "NOTED",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
-            {
-              "prompt": "Oil Additions",
-              "expectation": "NOTED",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            }
-
-          ],
-          "completionAction": "ACTION_GO_TO_NEXT_CHECKLIST"
-        },
 
         {
-          "title": "Securing Off-Site",
-          "items": [
+          "prompt": "Personal Items",
+          "type": "ITEM_TITLE"
+        },
+            {
+              "prompt": "iPad",
+              "expectation": "IN FLIGHT BAG",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Kneeboard",
+              "expectation": "IN FLIGHT BAG",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Checklists",
+              "expectation": "IN FLIGHT BAG",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "ForeFlight Sentry",
+              "expectation": "IN FLIGHT BAG",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Keys",
+              "expectation": "IN FLIGHT BAG",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+
+        {
+          "prompt": "Securing Off-Site",
+          "type": "ITEM_TITLE"
+        },
             {
               "prompt": "Control Lock",
               "expectation": "INSTALL",
@@ -1697,7 +1790,7 @@
             },
             {
               "prompt": "Sun Shade",
-              "expectation": "INSTALLED",
+              "expectation": "INSTALL",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
@@ -1709,48 +1802,10 @@
               "prompt": "Wheel Chocks",
               "expectation": "INSTALL",
               "type": "ITEM_CHALLENGE_RESPONSE"
-            }
-
-          ],
-          "completionAction": "ACTION_GO_TO_NEXT_CHECKLIST"
-        },
-
-        {
-          "title": "Securing in Hangar",
-          "items": [
-
-        {
-          "prompt": "Hangaring",
-          "type": "ITEM_TITLE"
-        },
-            {
-              "prompt": "Hangar Lock",
-              "expectation": "UNLOCKED",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            },
-            {
-              "prompt": "Hangar Key",
-              "expectation": "STILL IN LOCK",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            },
-            {
-              "prompt": "Hangar Doors",
-              "expectation": "COMPLETELY OPEN",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            },
-            {
-              "prompt": "Threshold Ramps",
-              "expectation": "IN PLACE",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            },
-            {
-              "prompt": "Aircraft",
-              "expectation": "HANGARED",
-              "type": "ITEM_CHALLENGE_RESPONSE"
             },
 
         {
-          "prompt": "Personal Items",
+          "prompt": "Securing in Hangar",
           "type": "ITEM_TITLE"
         },
             {
@@ -1759,12 +1814,7 @@
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
-              "prompt": "iPad & Mount",
-              "expectation": "REMOVED",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            },
-            {
-              "prompt": "ForeFlight Sentry",
+              "prompt": "iPad Mount",
               "expectation": "REMOVED",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
@@ -1774,30 +1824,15 @@
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
-              "prompt": "Food & Drinks",
-              "expectation": "REMOVED",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            },
-            {
               "prompt": "Luggage",
               "expectation": "REMOVED",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
-              "prompt": "Trash",
+              "prompt": "Food, Drinks, Trash",
               "expectation": "REMOVED",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
-            {
-              "prompt": "Other Personal Items",
-              "expectation": "REMOVED",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            },
-
-        {
-          "prompt": "Storage Prep",
-          "type": "ITEM_TITLE"
-        },
             {
               "prompt": "Battery Trickle Charger",
               "expectation": "CONNECTED",
@@ -1808,11 +1843,6 @@
               "expectation": "CLOSED",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
-
-        {
-          "prompt": "Surface Cleaning",
-          "type": "ITEM_TITLE"
-        },
             {
               "prompt": "Leading Edges",
               "expectation": "WIPE CLEAN",
@@ -1822,14 +1852,29 @@
               "prompt": "Windshield",
               "expectation": "WIPE CLEAN",
               "type": "ITEM_CHALLENGE_RESPONSE"
-            }
+            },
 
+        {
+          "prompt": "Notifications",
+          "type": "ITEM_TITLE"
+        },
+            {
+              "prompt": "Flight Plan",
+              "expectation": "CLOSED",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Loved Ones",
+              "expectation": "NOTIFIED",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            }
           ],
           "completionAction": "ACTION_GO_TO_NEXT_CHECKLIST"
         }
       ],
       "category": "normal"
     },
+
     {
       "title": "Engine Start",
       "checklists": [
@@ -1891,6 +1936,7 @@
       ],
       "category": "abnormal"
     },
+
     {
       "title": "Engine Failures",
       "checklists": [
@@ -2150,6 +2196,7 @@
       ],
       "category": "emergency"
     },
+
     {
       "title": "Engine Fires",
       "checklists": [
@@ -2251,6 +2298,7 @@
       ],
       "category": "emergency"
     },
+
     {
       "title": "Emergency Descents And Landings",
       "checklists": [
@@ -2410,6 +2458,7 @@
       ],
       "category": "emergency"
     },
+
     {
       "title": "Other",
       "checklists": [
@@ -2550,6 +2599,7 @@
       ],
       "category": "emergency"
     },
+
     {
       "title": "Landing Gear",
       "checklists": [
