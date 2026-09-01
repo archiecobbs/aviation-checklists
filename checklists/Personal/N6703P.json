@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "name": "Jolene Checklist $Revision: 1640 $",
+    "name": "Jolene Checklist $Revision: 1641 $",
     "makeAndModel": "Beechcraft Sierra",
     "aircraftInfo": "N6703P"
   },
@@ -577,11 +577,6 @@
               "prompt": "BioLiquid Containers",
               "expectation": "ACCESSIBLE",
               "type": "ITEM_CHALLENGE_RESPONSE"
-            },
-            {
-              "prompt": "Any Oil Added",
-              "expectation": "LOGGED",
-              "type": "ITEM_CHALLENGE_RESPONSE"
             }
           ],
           "completionAction": "ACTION_GO_TO_NEXT_CHECKLIST"
@@ -636,10 +631,11 @@
           "title": "Before Starting",
           "items": [
 
-        {
-          "prompt": "Safety & Security",
-          "type": "ITEM_TITLE"
-        },
+            {
+              "prompt": "Any Oil Added",
+              "expectation": "LOGGED",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
             {
               "prompt": "Seats",
               "expectation": "POSITION AND LOCKED",
@@ -655,11 +651,6 @@
               "expectation": "BRIEFED",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
-
-        {
-          "prompt": "Configuration Checks",
-          "type": "ITEM_TITLE"
-        },
             {
               "prompt": "Stabilator Trim",
               "expectation": "TAKE-OFF RANGE",
@@ -1735,17 +1726,27 @@
             },
 
         {
-          "prompt": "Flight Log",
+          "prompt": "Paperwork & Notifications",
           "type": "ITEM_TITLE"
         },
             {
-              "prompt": "Ending Tach Time",
-              "expectation": "LOGGED",
+              "prompt": "Flight Log - Tach Time",
+              "expectation": "NOTE",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
-              "prompt": "Squawks",
-              "expectation": "NOTED",
+              "prompt": "Flight Log - Squawks",
+              "expectation": "NOTE",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Flight Plan",
+              "expectation": "CLOSED",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Loved Ones",
+              "expectation": "NOTIFIED",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
 
@@ -1755,27 +1756,27 @@
         },
             {
               "prompt": "iPad",
-              "expectation": "IN FLIGHT BAG",
+              "expectation": "FLIGHT BAG",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
               "prompt": "Kneeboard",
-              "expectation": "IN FLIGHT BAG",
+              "expectation": "FLIGHT BAG",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
               "prompt": "Checklists",
-              "expectation": "IN FLIGHT BAG",
+              "expectation": "FLIGHT BAG",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
               "prompt": "ForeFlight Sentry",
-              "expectation": "IN FLIGHT BAG",
+              "expectation": "FLIGHT BAG",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
               "prompt": "Keys",
-              "expectation": "IN FLIGHT BAG",
+              "expectation": "FLIGHT BAG",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
 
@@ -1801,6 +1802,11 @@
             {
               "prompt": "Wheel Chocks",
               "expectation": "INSTALL",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "All Doors",
+              "expectation": "CLOSED",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
 
@@ -1851,21 +1857,6 @@
             {
               "prompt": "Windshield",
               "expectation": "WIPE CLEAN",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            },
-
-        {
-          "prompt": "Notifications",
-          "type": "ITEM_TITLE"
-        },
-            {
-              "prompt": "Flight Plan",
-              "expectation": "CLOSED",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            },
-            {
-              "prompt": "Loved Ones",
-              "expectation": "NOTIFIED",
               "type": "ITEM_CHALLENGE_RESPONSE"
             }
           ],
