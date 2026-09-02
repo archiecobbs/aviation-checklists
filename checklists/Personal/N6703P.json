@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "name": "Jolene Checklist $Revision: 1641 $",
+    "name": "Jolene Checklist $Revision: 1642 $",
     "makeAndModel": "Beechcraft Sierra",
     "aircraftInfo": "N6703P"
   },
@@ -10,7 +10,7 @@
       "title": "Before Flight",
       "checklists": [
         {
-          "title": "Device Preparation",
+          "title": "Before Leaving Home",
           "items": [
 
         {
@@ -19,17 +19,17 @@
         },
             {
               "prompt": "iPad",
-              "expectation": "CHARGED",
+              "expectation": "CHARGE",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
               "prompt": "ForeFlight Sentry",
-              "expectation": "CHARGED",
+              "expectation": "CHARGE",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
               "prompt": "Garmin inReach",
-              "expectation": "CHARGED",
+              "expectation": "CHARGE",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
 
@@ -39,17 +39,17 @@
         },
             {
               "prompt": "Garmin Updates",
-              "expectation": "DOWNLOADED",
+              "expectation": "DOWNLOAD",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
               "prompt": "ForeFlight Downloads",
-              "expectation": "UP-TO-DATE",
+              "expectation": "UPDATE",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
               "prompt": "ForeFlight Flights",
-              "expectation": "BRIEFED",
+              "expectation": "ENTER",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
 
@@ -59,52 +59,57 @@
         },
             {
               "prompt": "Silver Bag (Radio)",
-              "expectation": "PACKED",
+              "expectation": "PACK",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
               "prompt": "Orange Bag (Batteries)",
-              "expectation": "PACKED",
+              "expectation": "PACK",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
               "prompt": "Blue Bag (Power Cords)",
-              "expectation": "PACKED",
+              "expectation": "PACK",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
               "prompt": "iPad Pivot Mount",
-              "expectation": "PACKED",
+              "expectation": "PACK",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
               "prompt": "ForeFlight Sentry",
-              "expectation": "PACKED",
+              "expectation": "PACK",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
               "prompt": "Airplane/Hangar Keys",
-              "expectation": "PACKED",
+              "expectation": "PACK",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
               "prompt": "iPad",
-              "expectation": "PACKED",
+              "expectation": "PACK",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
               "prompt": "Kneeboard",
-              "expectation": "PACKED",
+              "expectation": "PACK",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
               "prompt": "Checklists",
-              "expectation": "PACKED",
+              "expectation": "PACK",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Sunscreen",
+              "expectation": "PACK",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
               "prompt": "Foggles (if needed)",
-              "expectation": "PACKED",
+              "expectation": "PACK",
               "type": "ITEM_CHALLENGE_RESPONSE"
             }
 
@@ -142,13 +147,33 @@
             },
             {
               "prompt": "Tie Downs and Chocks",
-              "expectation": "REMOVE",
+              "expectation": "REMOVE & STOW",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
         {
           "prompt": "Preparation - Cabin",
           "type": "ITEM_TITLE"
         },
+            {
+              "prompt": "Flight Bag",
+              "expectation": "ACCESSIBLE",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Hat & Sunglasses",
+              "expectation": "ACCESSIBLE",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Snacks & Hydration",
+              "expectation": "ACCESSIBLE",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "BioLiquid Containers",
+              "expectation": "ACCESSIBLE",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
             {
               "prompt": "Flight Log - Tach Time",
               "expectation": "VERIFY",
@@ -171,7 +196,7 @@
             },
             {
               "prompt": "All Switches",
-              "expectation": "VERIFY OFF",
+              "expectation": "OFF",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
@@ -211,22 +236,22 @@
         },
             {
               "prompt": "Towbar",
-              "expectation": "PRESENT",
+              "expectation": "VERIFY",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
               "prompt": "Quarts of Oil",
-              "expectation": "STOCKED",
+              "expectation": "STOCK",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
               "prompt": "Sprays and Wipes",
-              "expectation": "STOCKED",
+              "expectation": "STOCK",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
               "prompt": "25lb Weight",
-              "expectation": "SECURED OR REMOVED",
+              "expectation": "SECURE OR REMOVE",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
@@ -543,85 +568,6 @@
     },
 
     {
-      "title": "Cabin Prep",
-      "checklists": [
-        {
-          "title": "Personal Gear Setup",
-          "items": [
-            {
-              "prompt": "Headsets",
-              "expectation": "PLUGGED IN",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            },
-            {
-              "prompt": "Kneeboard",
-              "expectation": "READY ON DASH",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            },
-            {
-              "prompt": "Flight Bag",
-              "expectation": "ACCESSIBLE",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            },
-            {
-              "prompt": "Hat & Sunglasses",
-              "expectation": "ACCESSIBLE",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            },
-            {
-              "prompt": "Snacks & Hydration",
-              "expectation": "ACCESSIBLE",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            },
-            {
-              "prompt": "BioLiquid Containers",
-              "expectation": "ACCESSIBLE",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            }
-          ],
-          "completionAction": "ACTION_GO_TO_NEXT_CHECKLIST"
-        },
-        {
-          "title": "ForeFlight Setup",
-          "items": [
-            {
-              "prompt": "iPad",
-              "expectation": "MOUNTED",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            },
-            {
-              "prompt": "iPad Power Cord",
-              "expectation": "CONNECTED",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            },
-            {
-              "prompt": "ForeFlight App",
-              "expectation": "STARTED",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            },
-            {
-              "prompt": "ForeFlight Downloads",
-              "expectation": "UP TO DATE",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            },
-            {
-              "prompt": "Other Apps",
-              "expectation": "TERMINATED",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            },
-            {
-              "prompt": "ForeFlight Sentry",
-              "expectation": "MOUNTED",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            }
-          ],
-          "completionAction": "ACTION_GO_TO_NEXT_CHECKLIST"
-        }
-      ],
-      "category": "normal"
-    },
-
-    {
 
       "title": "Startup",
       "checklists": [
@@ -631,11 +577,75 @@
           "title": "Before Starting",
           "items": [
 
+        {
+          "prompt": "Personal Gear Setup",
+          "type": "ITEM_TITLE"
+        },
             {
               "prompt": "Any Oil Added",
               "expectation": "LOGGED",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
+            {
+              "prompt": "ForeFlight Sentry",
+              "expectation": "MOUNT",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "ForeFlight Sentry",
+              "expectation": "ON",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "iPad",
+              "expectation": "MOUNT",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "iPad Power Cord",
+              "expectation": "CONNECT",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "ForeFlight App",
+              "expectation": "START",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Other Apps",
+              "expectation": "TERMINATE",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "iPad Focus",
+              "expectation": "FLYING",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "iPad WiFi",
+              "expectation": "CONNECT TO SENTRY",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "iPhone",
+              "expectation": "AIRPLANE MODE",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Headsets",
+              "expectation": "PLUG IN",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Kneeboard",
+              "expectation": "STRAP ON",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+
+        {
+          "prompt": "Saftey Checks",
+          "type": "ITEM_TITLE"
+        },
             {
               "prompt": "Seats",
               "expectation": "POSITION AND LOCKED",
@@ -643,24 +653,22 @@
             },
             {
               "prompt": "Seat Belts",
-              "expectation": "FASTENED",
+              "expectation": "FASTEN",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
               "prompt": "Passengers",
-              "expectation": "BRIEFED",
+              "expectation": "BRIEF",
               "type": "ITEM_CHALLENGE_RESPONSE"
-            },
-            {
-              "prompt": "Stabilator Trim",
-              "expectation": "TAKE-OFF RANGE",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            },
-            {
-              "prompt": "6º nose up if only front seats are occupied",
-              "type": "ITEM_PLAINTEXT",
-              "indent": 1
-            },
+            }
+
+          ],
+          "completionAction": "ACTION_GO_TO_NEXT_CHECKLIST"
+        },
+        {
+          "title": "Starting Engine",
+          "items": [
+
             {
               "prompt": "Circuit Breakers",
               "expectation": "IN",
@@ -672,19 +680,13 @@
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
-              "prompt": "Light Switches",
-              "expectation": "AS REQUIRED",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            }
-          ],
-          "completionAction": "ACTION_GO_TO_NEXT_CHECKLIST"
-        },
-        {
-          "title": "Starting Engine",
-          "items": [
-            {
               "prompt": "Avionics Master",
               "expectation": "VERIFY OFF",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Light Switches",
+              "expectation": "AS REQUIRED",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
@@ -743,7 +745,7 @@
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
-              "prompt": "At most 3 seconds. Turn OFF as soon as fuel flow needle moves.",
+              "prompt": "OFF as soon as fuel flow needle moves.",
               "type": "ITEM_PLAINTEXT",
               "indent": 1
             },
@@ -907,28 +909,8 @@
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
-              "prompt": "ForeFlight Sentry",
-              "expectation": "ON",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            },
-            {
-              "prompt": "iPad WiFi",
-              "expectation": "CONNECT TO SENTRY",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            },
-            {
               "prompt": "iPad Bluetooth",
               "expectation": "CONNECT TO GNC 355",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            },
-            {
-              "prompt": "iPad Focus",
-              "expectation": "FLYING",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            },
-            {
-              "prompt": "iPhone",
-              "expectation": "AIRPLANE MODE",
               "type": "ITEM_CHALLENGE_RESPONSE"
             }
           ],
@@ -968,7 +950,7 @@
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
-              "prompt": "Autopilot Disengage Button",
+              "prompt": "Autopilot Disengage",
               "expectation": "VERIFY W/ AUDIO",
               "type": "ITEM_CHALLENGE_RESPONSE"
             }
@@ -990,7 +972,7 @@
             },
             {
               "prompt": "G5 PFD Altimeter",
-              "expectation": "SET CHECKED",
+              "expectation": "SET",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
@@ -1015,7 +997,7 @@
             },
             {
               "prompt": "Transponder",
-              "expectation": "SET, ALT",
+              "expectation": "SET",
               "type": "ITEM_CHALLENGE_RESPONSE"
             }
           ],
@@ -1056,7 +1038,7 @@
         },
             {
               "prompt": "Brakes",
-              "expectation": "APPLIED",
+              "expectation": "APPLY",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
@@ -1081,7 +1063,7 @@
             },
             {
               "prompt": "Propeller",
-              "expectation": "EXERCISE TO 300-400 DROP",
+              "expectation": "EXERCISE",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
@@ -1166,7 +1148,7 @@
             },
             {
               "prompt": "Tower & Departure Freqs.",
-              "expectation": "LOADED",
+              "expectation": "LOAD",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
@@ -1206,7 +1188,7 @@
             },
             {
               "prompt": "Departure Time",
-              "expectation": "NOTED",
+              "expectation": "NOTE",
               "type": "ITEM_CHALLENGE_RESPONSE"
             }
           ],
@@ -1224,7 +1206,7 @@
           "items": [
             {
               "prompt": "Throttle",
-              "expectation": "FULL - VERIFY 2700 RPM",
+              "expectation": "FULL - 2700 RPM",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
@@ -1295,139 +1277,32 @@
         },
             {
               "prompt": "Mixture",
-              "expectation": "PRE-LEANED",
+              "expectation": "PRE-LEAN",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
-              "prompt": "Lean manually until all cylinder EGT's start rising, then wait.",
-              "type": "ITEM_PLAINTEXT",
-              "indent": 1
-            },
-            {
               "prompt": "Lean Find Button (Black)",
-              "expectation": "PRESSED",
+              "expectation": "PRESS",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
               "prompt": "ROP Mode",
-              "expectation": "VERIFIED",
+              "expectation": "VERIFY",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
               "prompt": "Lean Find",
-              "expectation": "ACTIVATED",
+              "expectation": "ACTIVATE",
               "type": "ITEM_CHALLENGE_RESPONSE"
-            },
-            {
-              "prompt": "Lean up EGT 5° to 10° per second. Look for flashing white box.",
-              "type": "ITEM_PLAINTEXT",
-              "indent": 1
             },
             {
               "prompt": "Peak EGT",
-              "expectation": "FOUND",
+              "expectation": "FIND",
               "type": "ITEM_CHALLENGE_RESPONSE"
-            },
-            {
-              "prompt": "Leanest cylinder blue column flashes.",
-              "type": "ITEM_PLAINTEXT",
-              "indent": 1
             },
             {
               "prompt": "Mixture",
               "expectation": "FINE TUNE",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            },
-            {
-              "prompt": "Backup to desired rich of peak temp. Press LF to show relative difference.",
-              "type": "ITEM_PLAINTEXT",
-              "indent": 1
-            }
-
-          ],
-          "completionAction": "ACTION_GO_TO_NEXT_CHECKLIST"
-        },
-        {
-          "title": "Approach",
-          "items": [
-
-        {
-          "prompt": "Set-Up",
-          "type": "ITEM_TITLE"
-        },
-            {
-              "prompt": "ATIS/ASOS",
-              "expectation": "ACQUIRED",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            },
-            {
-              "prompt": "Altimeter & G5",
-              "expectation": "PRESSURE SET",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            },
-            {
-              "prompt": "Approach",
-              "expectation": "BRIEFED",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            },
-            {
-              "prompt": "Missed Approach",
-              "expectation": "BRIEFED",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            },
-            {
-              "prompt": "Approach in GPS",
-              "expectation": "LOADED",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            },
-
-        {
-          "prompt": "CLEARED FOR APPROACH: LPV/LNAV",
-          "type": "ITEM_TITLE"
-        },
-            {
-              "prompt": "G5 MFD",
-              "expectation": "VERIFY GPS #2 MAGENTA",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            },
-            {
-              "prompt": "Flight Plan",
-              "expectation": "VERIFY SEQUENCE",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            },
-            {
-              "prompt": "Heading & Altitude Bugs",
-              "expectation": "SET",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            },
-            {
-              "prompt": "Autopilot",
-              "expectation": "VERIFY APR/HDG/ALT",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            },
-
-        {
-          "prompt": "CLEARED FOR APPROACH: ILS",
-          "type": "ITEM_TITLE"
-        },
-            {
-              "prompt": "G5 MFD",
-              "expectation": "VERIFY VLOC #1 GREEN",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            },
-            {
-              "prompt": "Flight Plan",
-              "expectation": "VERIFY SEQUENCE",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            },
-            {
-              "prompt": "Heading & Altitude Bugs",
-              "expectation": "SET",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            },
-            {
-              "prompt": "Autopilot",
-              "expectation": "VERIFY APR/HDG/ALT",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
 
@@ -1459,6 +1334,93 @@
               "prompt": "M - Minimums",
               "expectation": "CHECK",
               "type": "ITEM_CHALLENGE_RESPONSE"
+            }
+
+          ],
+          "completionAction": "ACTION_GO_TO_NEXT_CHECKLIST"
+        },
+        {
+          "title": "IFR Approach",
+          "items": [
+
+        {
+          "prompt": "Set-Up",
+          "type": "ITEM_TITLE"
+        },
+            {
+              "prompt": "ATIS/ASOS",
+              "expectation": "ACQUIRE",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Altimeter & G5",
+              "expectation": "SET",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Approach",
+              "expectation": "BRIEF",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Missed Approach",
+              "expectation": "BRIEF",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Approach in GPS",
+              "expectation": "LOAD",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+
+        {
+          "prompt": "CLEARED FOR APPROACH: LPV/LNAV",
+          "type": "ITEM_TITLE"
+        },
+            {
+              "prompt": "G5 MFD",
+              "expectation": "GPS #2 MAGENTA",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Flight Plan",
+              "expectation": "VERIFY SEQUENCE",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Heading & Altitude Bugs",
+              "expectation": "SET",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Autopilot",
+              "expectation": "VERIFY APR/HDG/ALT",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+
+        {
+          "prompt": "CLEARED FOR APPROACH: ILS",
+          "type": "ITEM_TITLE"
+        },
+            {
+              "prompt": "G5 MFD",
+              "expectation": "VLOC #1 GREEN",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Flight Plan",
+              "expectation": "VERIFY SEQUENCE",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Heading & Altitude Bugs",
+              "expectation": "SET",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Autopilot",
+              "expectation": "VERIFY APR/HDG/ALT",
+              "type": "ITEM_CHALLENGE_RESPONSE"
             },
 
         {
@@ -1487,7 +1449,7 @@
         },
             {
               "prompt": "Landing Gear",
-              "expectation": "DOWN",
+              "expectation": "DOWN & 3 GREEN",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
@@ -1523,6 +1485,11 @@
             {
               "prompt": "Radio",
               "expectation": "REPORT FAF",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Cleared to Land",
+              "expectation": "VERIFY",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
 
@@ -1566,42 +1533,41 @@
               "type": "ITEM_CHALLENGE_RESPONSE"
             }
 
-
-
           ],
           "completionAction": "ACTION_GO_TO_NEXT_CHECKLIST"
         },
+
         {
-          "title": "Before Landing - GUMPS",
+          "title": "Before Landing",
           "items": [
 
             {
-              "prompt": "G - Fuel Selector Valve",
+              "prompt": "Fuel Selector Valve",
               "expectation": "FULLEST TANK",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
-              "prompt": "U - Landing Gear",
+              "prompt": "Landing Gear",
               "expectation": "DOWN & 3 GREEN",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
-              "prompt": "M - Mixture",
+              "prompt": "Mixture",
               "expectation": "FULL RICH/AS REQUIRED",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
-              "prompt": "P - Propeller",
+              "prompt": "Propeller",
               "expectation": "HIGH RPM",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
-              "prompt": "S - Seat Belts",
-              "expectation": "FASTENED",
+              "prompt": "Seat Belts",
+              "expectation": "FASTEN",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
-              "prompt": "S - Light Switches",
+              "prompt": "Lights",
               "expectation": "AS REQUIRED",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
@@ -1611,9 +1577,9 @@
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
-              "prompt": "Maximum extension speed 96 KIAS.",
-              "type": "ITEM_PLAINTEXT",
-              "indent": 1
+              "prompt": "Cleared to Land",
+              "expectation": "VERIFY",
+              "type": "ITEM_CHALLENGE_RESPONSE"
             }
           ],
           "completionAction": "ACTION_GO_TO_NEXT_CHECKLIST"
@@ -1666,7 +1632,7 @@
             },
             {
               "prompt": "Mixture",
-              "expectation": "IDLE CUT OFF",
+              "expectation": "IDLE CUT-OFF",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
@@ -1741,12 +1707,12 @@
             },
             {
               "prompt": "Flight Plan",
-              "expectation": "CLOSED",
+              "expectation": "CLOSE",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
               "prompt": "Loved Ones",
-              "expectation": "NOTIFIED",
+              "expectation": "NOTIFY",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
 
@@ -1816,37 +1782,37 @@
         },
             {
               "prompt": "Headsets",
-              "expectation": "REMOVED",
+              "expectation": "REMOVE",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
               "prompt": "iPad Mount",
-              "expectation": "REMOVED",
+              "expectation": "REMOVE",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
               "prompt": "Flight Bag",
-              "expectation": "REMOVED",
+              "expectation": "REMOVE",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
               "prompt": "Luggage",
-              "expectation": "REMOVED",
+              "expectation": "REMOVE",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
               "prompt": "Food, Drinks, Trash",
-              "expectation": "REMOVED",
+              "expectation": "REMOVE",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
               "prompt": "Battery Trickle Charger",
-              "expectation": "CONNECTED",
+              "expectation": "CONNECT",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
               "prompt": "All Doors",
-              "expectation": "CLOSED",
+              "expectation": "CLOSE",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
@@ -2201,7 +2167,7 @@
             },
             {
               "prompt": "Mixture",
-              "expectation": "IDLE CUT OFF",
+              "expectation": "IDLE CUT-OFF",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
@@ -2266,7 +2232,7 @@
             },
             {
               "prompt": "Mixture",
-              "expectation": "IDLE CUT OFF",
+              "expectation": "IDLE CUT-OFF",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
@@ -2382,7 +2348,7 @@
             },
             {
               "prompt": "Mixture",
-              "expectation": "IDLE CUT OFF",
+              "expectation": "IDLE CUT-OFF",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
@@ -2416,7 +2382,7 @@
             },
             {
               "prompt": "Mixture",
-              "expectation": "IDLE CUT OFF",
+              "expectation": "IDLE CUT-OFF",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
