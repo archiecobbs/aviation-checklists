@@ -1,8 +1,8 @@
 {
   "metadata": {
-    "name": "Jolene Checklist $Revision: 1642 $",
+    "name": "Jolene Checklist",
     "makeAndModel": "Beechcraft Sierra",
-    "aircraftInfo": "N6703P"
+    "aircraftInfo": "N6703P $Revision: 1646 $"
   },
   "groups": [
 
@@ -104,6 +104,11 @@
             },
             {
               "prompt": "Sunscreen",
+              "expectation": "PACK",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Headesets",
               "expectation": "PACK",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
@@ -255,8 +260,73 @@
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
-              "prompt": "Fuel Drain Tool",
+              "prompt": "Fuel Drain Tools",
               "expectation": "OBTAIN",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Shop Towel",
+              "expectation": "OBTAIN",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+
+        {
+          "prompt": "Fuel Checks",
+          "type": "ITEM_TITLE"
+        },
+            {
+              "prompt": "Left Fuel Tank",
+              "expectation": "CHECK QUANTITY",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Left Fuel Cap",
+              "expectation": "SECURE",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Left Fuel Sump",
+              "expectation": "DRAIN",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Right Fuel Tank",
+              "expectation": "CHECK QUANTITY",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Right Fuel Cap",
+              "expectation": "SECURE",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Right Fuel Sump",
+              "expectation": "DRAIN",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Fuel Strainer",
+              "expectation": "DRAIN",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+
+        {
+          "prompt": "Oil Checks",
+          "type": "ITEM_TITLE"
+        },
+            {
+              "prompt": "Engine Oil",
+              "expectation": "CHECK LEVEL",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Engine Oil Cap",
+              "expectation": "SECURE",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Fuel Drain Tools",
+              "expectation": "STOW",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
 
@@ -264,16 +334,6 @@
           "prompt": "Left Wing Top",
           "type": "ITEM_TITLE"
         },
-            {
-              "prompt": "Fuel Tank",
-              "expectation": "CHECK QUANTITY",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            },
-            {
-              "prompt": "Fuel Cap",
-              "expectation": "SECURE",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            },
             {
               "prompt": "Stall Warning",
               "expectation": "CHECK",
@@ -294,11 +354,6 @@
           "prompt": "Left Wing Bottom",
           "type": "ITEM_TITLE"
         },
-            {
-              "prompt": "Fuel Sump",
-              "expectation": "DRAIN",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            },
             {
               "prompt": "Fuel Tank Vent Line",
               "expectation": "CHECK",
@@ -459,26 +514,11 @@
               "expectation": "CHECK",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
-            {
-              "prompt": "Fuel Tank",
-              "expectation": "CHECK QUANTITY",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            },
-            {
-              "prompt": "Fuel Cap",
-              "expectation": "SECURE",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            },
 
         {
           "prompt": "Right Wing Bottom",
           "type": "ITEM_TITLE"
         },
-            {
-              "prompt": "Fuel Sump",
-              "expectation": "DRAIN",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            },
             {
               "prompt": "Fuel Tank Vent Line",
               "expectation": "CHECK",
@@ -499,21 +539,6 @@
           "prompt": "Nose Section",
           "type": "ITEM_TITLE"
         },
-            {
-              "prompt": "Fuel Strainer",
-              "expectation": "DRAIN",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            },
-            {
-              "prompt": "Engine Oil",
-              "expectation": "CHECK",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            },
-            {
-              "prompt": "Engine Oil Cap",
-              "expectation": "SECURE",
-              "type": "ITEM_CHALLENGE_RESPONSE"
-            },
             {
               "prompt": "Right Cowl",
               "expectation": "SECURE",
@@ -940,7 +965,7 @@
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
-              "prompt": "TO/GO Button",
+              "prompt": "TO/GA Button",
               "expectation": "PRESS",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
@@ -1163,7 +1188,7 @@
             },
             {
               "prompt": "Flight Director",
-              "expectation": "TO/GO",
+              "expectation": "TO/GA",
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
 
@@ -1204,6 +1229,11 @@
         {
           "title": "Takeoff",
           "items": [
+            {
+              "prompt": "Mixture",
+              "expectation": "SET FOR TAKEOFF",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
             {
               "prompt": "Throttle",
               "expectation": "FULL - 2700 RPM",
