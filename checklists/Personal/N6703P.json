@@ -2,7 +2,7 @@
   "metadata": {
     "name": "Jolene Checklist",
     "makeAndModel": "Beechcraft Sierra",
-    "aircraftInfo": "N6703P $Revision: 1646 $"
+    "aircraftInfo": "N6703P $Revision: 1647 $"
   },
   "groups": [
 
@@ -1711,6 +1711,16 @@
               "type": "ITEM_CHALLENGE_RESPONSE"
             },
             {
+              "prompt": "Flaps",
+              "expectation": "UP & SWITCH OFF",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
+              "prompt": "Trim",
+              "expectation": "ZERO DEGREES",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
+            {
               "prompt": "Headset ANR",
               "expectation": "OFF",
               "type": "ITEM_CHALLENGE_RESPONSE"
@@ -1810,6 +1820,11 @@
           "prompt": "Securing in Hangar",
           "type": "ITEM_TITLE"
         },
+            {
+              "prompt": "Nosewheel Chock",
+              "expectation": "INSTALL",
+              "type": "ITEM_CHALLENGE_RESPONSE"
+            },
             {
               "prompt": "Headsets",
               "expectation": "REMOVE",
